@@ -51,12 +51,12 @@
                 <div class="bill bill__basic col-md-5 col-sm-12">
                     <p class="fact">Most popular!</p>
                     <div class="content">
-                        <p>All-access membership</p>
+                        <p class="bill__abovetext">All-access membership</p>
                         <h4 class="bill__title">Basic</h4>
                         <p class="bill__summary">Includes all courses from many programs</p>
                         <div class="options">
-                            <h6>Pick your plan</h6>
-                            <div class="form-check">
+                            <h6 class="options__title">Pick your plan:</h6>
+                            <div class="form-check options__checkbox">
                                 <input
                                     class="form-check-input"
                                     type="radio"
@@ -65,11 +65,13 @@
                                     checked
                                 >
                                 <label class="form-check-label" for="flexRadioDefault1">
-                                    <b>$47</b>
-                                    /month (pay annually — $564 / year)
+                                    <b class="option__large">$47</b>
+                                    <b class="option__med">/month</b>
+                                    (pay annually — $564 / year)
+                                    <img src="./img/discount_pic.svg" alt="">
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check options__checkbox">
                                 <input
                                     class="form-check-input"
                                     type="radio"
@@ -77,12 +79,13 @@
                                     id="flexRadioDefault2"
                                 >
                                 <label class="form-check-label" for="flexRadioDefault2">
-                                    <b>$87</b>
-                                    /month (pay per month)
+                                    <b class="option__large">$87</b>
+                                    <b class="option__med">/month</b>
+                                    (pay per month)
                                 </label>
                             </div>
+                            <button class="bill__enroll">Enroll Now</button>
                         </div>
-                        <button class="bill__enroll">Enroll Now</button>
                         <p>Includes:</p>
                         <ul class="bill__details">
                             <li>
@@ -113,11 +116,17 @@
                 <div class="bill bill__pro col-md-5 col-sm-12">
                     <p class="fact">Most benefits!</p>
                     <div class="content">
-                        <p>All-access membership</p>
+                        <p class="bill__abovetext">All-access membership</p>
                         <h4 class="bill__title">Badass</h4>
                         <p class="bill__summary">Everything in the Basic plan, plus more</p>
-                        <div class="options"></div>
-                        <button class="bill__enroll">Enroll Now</button>
+                        <div class="options">
+                            <div class="options__checkbox">
+                                <b class="option__large">$87</b>
+                                <b class="option__med">/month</b>
+                                (pay per month)
+                            </div>
+                            <button class="bill__enroll">Enroll Now</button>
+                        </div>
                         <p>Everything in Basic, plus:</p>
                         <ul class="bill__details">
                             <li>
@@ -164,10 +173,20 @@
                     <tr>
                         <th scope="col"></th>
                         <th scope="col">
-                            <h6>Basic</h6>
+                            <div class="marker marker__basic"></div>
+                            <div class="details__column-title">
+                                <p class="details__abovetext">All-Access Membership</p>
+                                <h6 class="table__plan-heading">Basic</h6>
+                                <p class="details__abovetext">$564 / year</p>
+                            </div>
                         </th>
                         <th scope="col">
-                            <h6>Full immersion</h6>
+                            <div class="marker"></div>
+                            <div class="details__column-title">
+                                <p class="details__abovetext">All-Access Membership</p>
+                                <h6 class="table__plan-heading">Full immersion</h6>
+                                <p class="details__abovetext">$924 / year</p>
+                            </div>
                         </th>
                     </tr>
                 </thead>
@@ -353,8 +372,16 @@
                 <tfoot>
                     <tr>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <h6 class="table__plan-heading">Basic</h6>
+                            <p class="details__abovetext">$564 / year</p>
+                            <button class="bill__enroll bill__enroll-basic">Enroll Now</button>
+                        </td>
+                        <td>
+                            <h6 class="table__plan-heading">Full immersion</h6>
+                            <p class="details__abovetext">$924 / year</p>
+                            <button class="bill__enroll bill__enroll-pro">Enroll Now</button>
+                        </td>
                     </tr>
                 </tfoot>
             </table>
@@ -666,7 +693,6 @@
                 </button>
             </div>
         </section>
-       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="./index.js"></script>
     </body>

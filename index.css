@@ -97,15 +97,50 @@
   font-weight: 700;
   padding: 5px 0;
 }
+.bill .bill__abovetext {
+  color: rgb(19, 46, 87);
+  margin-bottom: 4px;
+}
+.bill .bill__title {
+  font-weight: 700;
+  color: rgb(19, 46, 87);
+  margin-bottom: 24px;
+}
 .bill .content {
   width: 90%;
   margin: 0 auto;
 }
-.bill .bill__enroll {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 5px;
-  color: white;
+.bill .options {
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(221, 222, 224);
+  margin-bottom: 24px;
+}
+.bill .options__title {
+  font-weight: 700;
+  color: rgb(19, 46, 87);
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.bill .options__checkbox {
+  margin-bottom: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(19, 46, 87);
+}
+.bill .form-check label,
+.bill .form-check input {
+  color: rgb(114, 116, 119);
+}
+.bill .form-check:has(input:checked) label {
+  color: rgb(19, 46, 87);
+}
+.bill .option__large {
+  font-size: 32px;
+  font-weight: 700;
+}
+.bill .option__med {
+  font-size: 18px;
+  font-weight: 700;
 }
 .bill .bill__details {
   padding: 0;
@@ -136,12 +171,29 @@
   background-color: rgb(19, 46, 87);
 }
 
+.bill__enroll {
+  padding: 10px 36px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
 .table {
   width: 80% !important;
   margin: 0 auto;
 }
 .table thead th {
   text-align: center;
+  padding: 0 0 27px 0 !important;
+}
+.table thead th .marker {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(19, 46, 87);
+}
+.table thead th .marker__basic {
+  background-color: rgb(50, 113, 210);
 }
 .table td {
   text-align: center;
@@ -150,6 +202,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.table .details__column-title {
+  margin-top: 32px;
+}
+.table .details__abovetext {
+  font-weight: 400;
+  color: rgb(114, 116, 119);
+}
+.table .bill__enroll-basic {
+  background-color: rgb(50, 113, 210);
+}
+.table .bill__enroll-pro {
+  background-color: rgb(19, 46, 87);
+}
+.table h6 {
+  color: rgb(19, 46, 87);
+  font-weight: 700;
+  font-size: 18px;
 }
 
 th,
@@ -160,14 +230,6 @@ td {
 th img,
 td img {
   margin: 0 0 0 auto;
-}
-
-.form-check label,
-.form-check input {
-  color: rgb(114, 116, 119);
-}
-.form-check:has(input:checked) label {
-  color: rgb(19, 46, 87);
 }
 
 .faq {
