@@ -1,0 +1,195 @@
+$blue-light: rgba(50, 113, 210, 1);
+$blue-dark: rgba(19, 46, 87, 1);
+$background: rgba(248, 249, 250, 1);
+
+$input-bg: red;
+
+.body {
+  background-color: $background;
+  font-family: "Open Sans";
+  section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+
+  button {
+    border: none;
+    background-color: white;
+  }
+}
+.title {
+  color: white;
+  background-image: url(./img/title.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 620px !important;
+  width: 100vw !important;
+  button {
+    background-color: transparent !important;
+  }
+}
+.nav {
+  max-height: 64px;
+  padding: 14px 0 10px;
+  width: 80%;
+  .form {
+    border: 1px solid white;
+    border-radius: 20px;
+  }
+
+  .form-control {
+    background-color: transparent !important;
+    border: none !important;
+    width: fit-content;
+    &::placeholder {
+      color: white !important;
+    }
+  }
+  .links {
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      &:first-of-type {
+        margin-right: 30px;
+      }
+      &:last-of-type {
+        padding-left: 30px;
+        border-left: 1px solid #fff;
+      }
+    }
+  }
+}
+.title__heading {
+  margin-top: 80px;
+}
+.title__subtext {
+  margin: 36px 0 360px;
+}
+
+.bills {
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.bill {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0 !important;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.04);
+
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
+
+  .fact {
+    text-align: center;
+    color: white;
+  }
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bill__enroll {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .bill__details {
+    padding: 0;
+  }
+  li {
+    margin-bottom: 25px;
+  }
+}
+.bill__basic {
+  position: relative;
+  top: -200px;
+  .fact {
+    background-color: $blue-light;
+  }
+  .bill__enroll {
+    background-color: $blue-light;
+  }
+}
+.bill__pro {
+  position: relative;
+  top: -100px;
+  .fact {
+    background-color: $blue-dark;
+  }
+  .bill__enroll {
+    background-color: $blue-dark;
+  }
+}
+
+.table {
+  width: 80% !important;
+  margin: 0 auto;
+  thead th {
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+}
+th,
+td {
+  width: 33%;
+  padding: 27px 32px !important;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.form-check {
+  label,
+  input {
+    color: rgba(114, 116, 119, 1);
+  }
+  &:has(input:checked) {
+    label {
+      color: $blue-dark;
+    }
+  }
+}
+.faq {
+  width: 100% !important;
+  background-color: white;
+  .content {
+    padding: 100px 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .faq__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  li {
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.gallery {
+  padding: 90px 0 60px !important;
+  .gallery__title {
+    text-align: center;
+  }
+  .carousel {
+    height: 200px;
+  }
+}

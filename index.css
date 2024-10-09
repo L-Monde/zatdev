@@ -1,0 +1,188 @@
+.body {
+  background-color: rgb(248, 249, 250);
+  font-family: "Open Sans";
+}
+.body section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+.body ul {
+  list-style: none;
+}
+.body button {
+  border: none;
+  background-color: white;
+}
+
+.title {
+  color: white;
+  background-image: url(./img/title.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 620px !important;
+  width: 100vw !important;
+}
+.title button {
+  background-color: transparent !important;
+}
+
+.nav {
+  max-height: 64px;
+  padding: 14px 0 10px;
+  width: 80%;
+}
+.nav .form {
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.nav .form-control {
+  background-color: transparent !important;
+  border: none !important;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.nav .form-control::-moz-placeholder {
+  color: white !important;
+}
+.nav .form-control::placeholder {
+  color: white !important;
+}
+.nav .links div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav .links div:first-of-type {
+  margin-right: 30px;
+}
+.nav .links div:last-of-type {
+  padding-left: 30px;
+  border-left: 1px solid #fff;
+}
+
+.title__heading {
+  margin-top: 80px;
+}
+
+.title__subtext {
+  margin: 36px 0 360px;
+}
+
+.bills .row {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bill {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0 !important;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
+}
+.bill .fact {
+  text-align: center;
+  color: white;
+}
+.bill .content {
+  width: 90%;
+  margin: 0 auto;
+}
+.bill .bill__enroll {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.bill .bill__details {
+  padding: 0;
+}
+.bill li {
+  margin-bottom: 25px;
+}
+
+.bill__basic {
+  position: relative;
+  top: -200px;
+}
+.bill__basic .fact {
+  background-color: rgb(50, 113, 210);
+}
+.bill__basic .bill__enroll {
+  background-color: rgb(50, 113, 210);
+}
+
+.bill__pro {
+  position: relative;
+  top: -100px;
+}
+.bill__pro .fact {
+  background-color: rgb(19, 46, 87);
+}
+.bill__pro .bill__enroll {
+  background-color: rgb(19, 46, 87);
+}
+
+.table {
+  width: 80% !important;
+  margin: 0 auto;
+}
+.table thead th {
+  text-align: center;
+}
+.table td {
+  text-align: center;
+}
+
+th,
+td {
+  width: 33%;
+  padding: 27px 32px !important;
+}
+th img,
+td img {
+  margin: 0 auto;
+}
+
+.form-check label,
+.form-check input {
+  color: rgb(114, 116, 119);
+}
+.form-check:has(input:checked) label {
+  color: rgb(19, 46, 87);
+}
+
+.faq {
+  width: 100% !important;
+  background-color: white;
+}
+.faq .content {
+  padding: 100px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+.faq .faq__title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.faq li {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.gallery {
+  padding: 90px 0 60px !important;
+}
+.gallery .gallery__title {
+  text-align: center;
+}
+.gallery .carousel {
+  height: 200px;
+}/*# sourceMappingURL=index.css.map */
