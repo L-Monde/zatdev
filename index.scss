@@ -51,7 +51,11 @@ $input-bg: red;
     }
   }
   .links {
-
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+    }
     div {
       display: flex;
       align-items: center;
@@ -94,6 +98,9 @@ $input-bg: red;
   .fact {
     text-align: center;
     color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 0;
   }
   .content {
     width: 90%;
@@ -139,9 +146,15 @@ $input-bg: red;
   margin: 0 auto;
   thead th {
     text-align: center;
+
   }
   td {
     text-align: center;
+  }
+  tbody th div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 th,
@@ -149,7 +162,7 @@ td {
   width: 33%;
   padding: 27px 32px !important;
   img {
-    margin: 0 auto;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -185,11 +198,37 @@ td {
 }
 
 .gallery {
-  padding: 90px 0 60px !important;
+  width: 100% !important;
+  padding: 90px 0 90px !important;
   .gallery__title {
     text-align: center;
   }
   .carousel {
-    height: 200px;
+    max-height: 330px;
+  }
+  .carousel-inner {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .col {
+    padding: 2%;
+  }
+  .card {
+    padding: 32px;
+    .heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 30px;
+      margin-bottom: 15px;
+      .card__name {
+        & *{
+          margin: 0;
+        }
+      }
+    }
+    h6 {
+      font-weight: 600;
+    }
   }
 }

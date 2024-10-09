@@ -49,6 +49,11 @@
 .nav .form-control::placeholder {
   color: white !important;
 }
+.nav .links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
 .nav .links div {
   display: flex;
   align-items: center;
@@ -88,6 +93,9 @@
 .bill .fact {
   text-align: center;
   color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 0;
 }
 .bill .content {
   width: 90%;
@@ -138,6 +146,11 @@
 .table td {
   text-align: center;
 }
+.table tbody th div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 th,
 td {
@@ -146,7 +159,7 @@ td {
 }
 th img,
 td img {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 
 .form-check label,
@@ -178,11 +191,35 @@ td img {
 }
 
 .gallery {
-  padding: 90px 0 60px !important;
+  width: 100% !important;
+  padding: 90px 0 90px !important;
 }
 .gallery .gallery__title {
   text-align: center;
 }
 .gallery .carousel {
-  height: 200px;
+  max-height: 330px;
+}
+.gallery .carousel-inner {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.gallery .col {
+  padding: 2%;
+}
+.gallery .card {
+  padding: 32px;
+}
+.gallery .card .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+.gallery .card .heading .card__name * {
+  margin: 0;
+}
+.gallery .card h6 {
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */
