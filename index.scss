@@ -16,9 +16,15 @@ $input-bg: red;
     list-style: none;
   }
 
-  button {
+  .button {
     border: none;
-    background-color: white;
+    background-color: transparent;
+
+    padding: 10px 36px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
   }
 }
 
@@ -32,8 +38,8 @@ $input-bg: red;
   background-position-x: center;
   height: 620px !important;
   width: 100vw !important;
-  button {
-    background-color: transparent !important;
+  .button {
+    border: 1px solid white;
   }
 }
 .nav {
@@ -43,12 +49,15 @@ $input-bg: red;
   .form {
     border: 1px solid white;
     border-radius: 20px;
+    width: 30%;
+    input:placeholder-shown {
+      text-overflow: ellipsis;
+    }
   }
 
   .form-control {
     background-color: transparent !important;
     border: none !important;
-    width: fit-content;
     &::placeholder {
       color: white !important;
     }
@@ -184,13 +193,6 @@ $input-bg: red;
     background-color: $blue-dark;
   }
 }
-.bill__enroll {
-  padding: 10px 36px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: 700;
-}
 
 //Table section
 
@@ -224,11 +226,13 @@ $input-bg: red;
     font-weight: 400;
     color: rgba(114, 116, 119, 1);
   }
-  .bill__enroll-basic {background-color: $blue-light;}
+  .bill__enroll-basic {
+    background-color: $blue-light;
+  }
   .bill__enroll-pro {
     background-color: $blue-dark;
   }
-  
+
   h6 {
     color: $blue-dark;
     font-weight: 700;
@@ -265,7 +269,6 @@ td {
     padding-bottom: 10px;
   }
 }
-
 
 //Gallery
 

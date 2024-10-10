@@ -10,9 +10,14 @@
 .body ul {
   list-style: none;
 }
-.body button {
+.body .button {
   border: none;
-  background-color: white;
+  background-color: transparent;
+  padding: 10px 36px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
 }
 
 .title {
@@ -24,8 +29,8 @@
   height: 620px !important;
   width: 100vw !important;
 }
-.title button {
-  background-color: transparent !important;
+.title .button {
+  border: 1px solid white;
 }
 
 .nav {
@@ -36,12 +41,17 @@
 .nav .form {
   border: 1px solid white;
   border-radius: 20px;
+  width: 30%;
+}
+.nav .form input:-moz-placeholder-shown {
+  text-overflow: ellipsis;
+}
+.nav .form input:placeholder-shown {
+  text-overflow: ellipsis;
 }
 .nav .form-control {
   background-color: transparent !important;
   border: none !important;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .nav .form-control::-moz-placeholder {
   color: white !important;
@@ -169,14 +179,6 @@
 }
 .bill__pro .bill__enroll {
   background-color: rgb(19, 46, 87);
-}
-
-.bill__enroll {
-  padding: 10px 36px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: 700;
 }
 
 .table {
