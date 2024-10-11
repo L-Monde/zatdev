@@ -10,6 +10,11 @@
 .body ul {
   list-style: none;
 }
+.body h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(19, 46, 87);
+}
 .body .button {
   border: none;
   background-color: transparent;
@@ -79,6 +84,7 @@
 
 .title__heading {
   margin-top: 80px;
+  font-weight: 700;
 }
 
 .title__subtext {
@@ -252,6 +258,11 @@ td img {
   border-bottom: 1px solid rgb(235, 235, 235);
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+.faq .faq__item-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(103, 103, 103);
 }
 
 .gallery {

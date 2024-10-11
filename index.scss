@@ -15,6 +15,11 @@ $input-bg: red;
   ul {
     list-style: none;
   }
+  h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: $blue-dark;
+  }
 
   .button {
     border: none;
@@ -84,6 +89,7 @@ $input-bg: red;
 }
 .title__heading {
   margin-top: 80px;
+  font-weight: 700;
 }
 .title__subtext {
   margin: 36px 0 360px;
@@ -267,6 +273,11 @@ td {
     border-bottom: 1px solid rgba(235, 235, 235, 1);
     margin-bottom: 10px;
     padding-bottom: 10px;
+  }
+  .faq__item-text {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(103, 103, 103, 1);
   }
 }
 
